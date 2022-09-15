@@ -5,135 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Innovated</title>
 </head>
 <body>
 
     <header class="header">
-        <div class="header__logo">
-            <svg class="logo__icon" width="52" height="59">
-                <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-            <a href="">INNOVATED</a>
-        </div>
+        <div class="container header__box">
+            <a href="./index.html" class="link header__logo logo">
+                <svg class="logo__icon" width="80" height="80">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+                INNOVATED
+            </a>
         <nav class="navigation">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Reviews</li>
+            <ul class="header__navigation">
+                <li><a class="header__navigation-link link current">Home</a></li>
+                <li><a class="header__navigation-link link">About</a></li>
+                <li><a class="header__navigation-link link">Services</a></li>
+                <li><a class="header__navigation-link link">Reviews</a></li>
             </ul>
         </nav>
-        <button class="btn">Get started</button>
+        <button class="btn header__btn">Get started</button>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero__box">
                 <div class="hero__description">
-                    <h2>Digtal business</h2>
-                    <h1>Our job help you to make a <span>Brand</span>.</h1>
-                    <div>
-                        <button>Get started</button>
-                        <svg class="logo__icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-hero-v1"></use>
-                        </svg>
-                        <a href="">Play video</a>
+                    <h2 class="hero__title">Digtal business</h2>
+                    <h1 class="hero__call">Our job help you to make a <span>Brand</span>.</h1>
+                    <div class="hero__actions">
+                        <button class="btn">Get started</button>
+                        <a href=""  class="hero__link link">
+                            <div class="hero__icon">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-hero-v1"></use>
+                                </svg>
+                            </div>
+                            <p>Play video</p>
+                        </a>
                     </div>
                 </div>
-                <div class="hero__images">
-                    <!-- <img 
-                        src="./images/hero-min.png" 
-                        alt="girl" 
-                        width="1062"
-                        height="708" 
-                        class="img hero__img"
-                    > -->
+                <img 
+                    src="./images/hero-min.png" 
+                    alt="girl" 
+                    width="918"
+                    height="708" 
+                    class="img hero__img"
+                >
+                <div class="hero__icons hero__icons--letter">
+                <svg width="30" height="30">
+                    <use href="./images/icons.svg#icon-hero1"></use>
+                </svg>
                 </div>
-            
+                <div class="hero__icons hero__icons--idea">
+                    <svg width="30" height="36">
+                        <use href="./images/icons.svg#icon-hero2"></use>
+                    </svg>
+                </div>
+                <div class="hero__icons hero__icons--message">
+                    <svg width="30" height="30">
+                        <use href="./images/icons.svg#icon-hero3"></use>
+                    </svg>
+                </div>
             </div>
         </section>
         <section class="about-us">
-            <div class="about-us__description">
-                <h2>Community</h2>
-                <h3>Platfrom dedicated to promoting</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida. Laoreet eget aliquet consequat.</p>
-                <button>What we do</button>
+            <div class="container about-us__box">
+                <div class="about-us__description">
+                    <h2 class="about-us__title">Community</h2>
+                    <h3 class="about-us__heading third-title">Platfrom dedicated to promoting</h3>
+                    <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida. Laoreet eget aliquet consequat.</p>
+                    <button class="btn">What we do</button>
+                </div>
+                <div class="about-us__img">
+                    <img src="./images/about-us.jpg" alt="do project" class="img">
+                </div>
             </div>
         </section>
         <section class="features">
-            <h2 class="visually-hidden">features</h2>
-            <h3>How we work</h3>
-            <ul>
-                <li>
-                    <h4>Start Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p>
-                </li>
-                <li>
-                    <h4>Go to code</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p></li>
-                <li>
-                    <h4>Final deliverd</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">features</h2>
+                <h3 class="features__heading third-title">How we work</h3>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <h4>Start Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p>
+                    </li>
+                    <li class="features__item">
+                        <h4>Go to code</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p></li>
+                    <li class="features__item">
+                        <h4>Final deliverd</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget augue arcu gravida.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="reviews">
-            <h2 class="visually-hidden">reviews</h2>
-            <h3>What our customar are saying</h3>
-            <ul>
-                <li>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
-                    <div>
-                        <p>Elon Musk</p>
-                        <p>CEO</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
-                    <div>
-                        <p>Easin Arafat</p>
-                        <p>Product Design</p>
-                    </div>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">reviews</h2>
+                <h3 class="third-title reviews__heading">What our customar are saying</h3>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
+                        <div>
+                            <p>Elon Musk</p>
+                            <p>CEO</p>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
+                        <div>
+                            <p>Easin Arafat</p>
+                            <p>Product Design</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="sign-up">
-            <h2 class="visually-hidden">sign-up</h2>
-            <h3>Sign up to our Newsletter</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
-            <form class="sign-up__form">
-                <input name="mail" class="sign-up__input" type="email" placeholder="Enter your email address">
-                <button type="submit">Send</button>
-            </form>
+            <div class="container sign-up__box">
+                <h2 class="visually-hidden">sign-up</h2>
+                <h3 class="third-title sign-up__heading">Sign up to our Newsletter</h3>
+                <p class="sign-up__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.</p>
+                <form class="sign-up__form">
+                    <input name="mail" class="sign-up__input" type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <a href="">INNOVATED</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus lacus mi mauris sem. Id vulputate sapien.</p>
-        </div>
-        <div>
-            <p>Home</p>
-            <ul>
-                <li>Accessibility</li>
-                <li>Lertifiotion</li>
-                <li>Knowledge</li>
-            </ul>
-        </div>
-        <div>
-            <p>Pages</p>
-            <ul>
-                <li>Blogs</li>
-                <li>Careers</li>
-                <li>Communing</li>
-            </ul>
-        </div>
-        <div>
-            <p>Contact us</p>
-            <p>@shovasatkhira88.com</p>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <a href="">INNOVATED</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus lacus mi mauris sem. Id vulputate sapien.</p>
+            </div>
+            <div>
+                <p>Home</p>
+                <ul>
+                    <li>Accessibility</li>
+                    <li>Lertifiotion</li>
+                    <li>Knowledge</li>
+                </ul>
+            </div>
+            <div>
+                <p>Pages</p>
+                <ul>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                    <li>Communing</li>
+                </ul>
+            </div>
+            <div>
+                <p>Contact us</p>
+                <p>@shovasatkhira88.com</p>
+            </div>
         </div>
     </footer>
     
