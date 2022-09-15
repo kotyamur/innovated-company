@@ -1,7 +1,3 @@
-body {
-    background-color: aquamarine;
-}
-
 h1,
 h2,
 h3,
@@ -44,21 +40,24 @@ address {
 }
 
 :root {
-    --theme-hover: #176fb6; 
-    --theme-main: #757575;
-    --theme-heading: #212121;
-    --theme-logo: #000000;
-    --theme-accent: #FFFFFF;
-    --theme-bg-btn: #F5F4FA;
+    --bg-main: #E5E5E5; 
+    --text-main: #171832;
+    --btn-text: #FFFFFF;
+    --theme-accent: #2D74FF;
+    --bg-blocks: #FFFFFF;
     --typical-duration: 250ms;
     --typical-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--theme-main);
+    font-family: 'Gelasio', serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main);
     font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
+    background-color: var(--bg-main);
 }
 
 .btn {
@@ -71,8 +70,8 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--theme-accent);
-    background-color: var(--theme-hover);
+    color: var(--btn-text);
+    background-color: var(--theme-accent);
     scale: 1;
 
     transition: scale var(--typical-duration) var(--typical-timing-function);
@@ -82,6 +81,36 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: var(--theme-hover);
     scale: 1.1;
+}
+
+.section-title {
+    font-family: 'Gelasio';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.current {
+    color: var(--theme-accent);
+}
+
+.hero {
+    position: relative;
+    padding: 312px 0 196px 0;
+    width: 1140px;
+    background-image: url(../images/hero-min.png);
+    background-repeat: no-repeat;
+    background-position-x: 540px;
+    background-size: contain;
+}
+
+.hero__description {
+    width: 520px;
+}
+
+.hero__img {
+    position: absolute;
+    width: 1062px;
+    height: 708px;
 }
