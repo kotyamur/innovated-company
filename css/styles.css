@@ -95,13 +95,18 @@ body {
     color: var(--theme-accent);
 }
 
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .hero {
     position: relative;
     padding: 312px 0 196px 0;
-    width: 1140px;
     background-image: url(../images/hero-min.png);
     background-repeat: no-repeat;
-    background-position-x: 540px;
+    background-position: right;
     background-size: contain;
 }
 
