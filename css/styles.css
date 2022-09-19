@@ -74,14 +74,22 @@ body {
     color: var(--btn-text);
     background-color: var(--theme-accent);
     scale: 1;
-
     transition: scale var(--typical-duration) var(--typical-timing-function);
-    
-    
 }
 
 .btn:hover,
 .btn:focus {
+    scale: 1.1;
+}
+
+.link-transition {
+    cursor: pointer;
+    scale: 1;
+    transition: scale var(--typical-duration) var(--typical-timing-function);
+}
+
+.link-transition:hover,
+.link-transition:focus {
     scale: 1.1;
 }
 
@@ -144,6 +152,7 @@ body {
 .header__btn {
     margin-left: auto;
 }
+
 
 .hero {
     position: relative;
@@ -319,6 +328,43 @@ body {
     border-radius: 50%;
     overflow: hidden;
     /* padding: 32px; */
+}
+
+.about-us__triangle {
+    position: absolute;
+    left: -99px;
+    bottom: -63px;
+    width: 242px;
+    height: 242px;
+    background: var(--theme-accent);
+    opacity: 0.05;
+    border-radius: 5px;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+}
+
+.about-us__circle {
+    position: absolute;
+    top: -40px;
+    right: -85px;
+    width: 242px;
+    height: 242px;
+    background: var(--theme-accent);
+    opacity: 0.05;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.about-us__circle-small {
+    position: absolute;
+    top: 17px;
+    right: -28px;
+    width: 130px;
+    height: 130px;
+    background: #8296BE;
+    opacity: 0.2;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .features {
