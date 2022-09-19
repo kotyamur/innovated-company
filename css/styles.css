@@ -103,17 +103,17 @@ body {
 }
 
 .logo {
-    position: relative;
+    display: block;
+    height: 75px;
+    padding: 30px 0 15px 22px;
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
     text-transform: uppercase;
     font-family: 'Gelasio';
     font-weight: 500;
     font-size: 24px;
-}
-
-.logo__icon {
-    position: absolute;
-    translate: -42% -40%;
-    z-index: -1;
 }
 
 .header {
@@ -124,12 +124,11 @@ body {
 
 .header__box {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .header__logo {
     margin-right: 121px;
-    padding: 15px 0;
 }
 
 .header__navigation {
@@ -293,15 +292,33 @@ body {
     width: 555px;
     height: 336px;
     margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-    url(../images/about-us.jpg); */
 }
 
-.about-us__img img {
+.about-us__video-cover {
     position: absolute;
-    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us__video-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    overflow: hidden;
+    /* padding: 32px; */
 }
 
 .features {
@@ -356,6 +373,8 @@ body {
     background-color: var(--bg-blocks);
     padding: 75px 0;
     text-align: center;
+    background-image: url(../images/signup.svg);
+    background-size: contain;
 }
 
 .sign-up__heading {
@@ -363,7 +382,10 @@ body {
 }
 
 .sign-up__text {
-    margin-bottom: 40px;
+    width: 635px;
+    margin: 0 auto 40px auto;
+    color: #000000;
+    opacity: 0.7;
 }
 
 .sign-up__form  {
@@ -404,14 +426,7 @@ body {
 }
 
 .footer__logo {
-    display: block;
-    background-image: url(../images/logo.svg);
-    padding: 30px 0 15px 22px;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-    background-position-x: -10px;
-    background-size: 78px 75px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .footer__info-text {
@@ -457,12 +472,28 @@ body {
     height: 20px;
 }
 
+.footer__social-link:nth-child(1) {
+    background-image: url(../images/facebook.svg);
+    background-size: contain;
+}
+
 .footer__social-link:nth-child(2) {
-    background-image: url(../images/insta\ \(1\).svg);
+    background-image: url(../images/insta.svg);
     background-size: contain;
 }
 
 .footer__social-link:nth-child(3) {
-    background-image: url(../images/twit\ \(1\).svg);
+    background-image: url(../images/twit.svg);
     background-size: contain;
+}
+
+.footer__social-link:nth-child(4) {
+    background-image: url(../images/google.svg);
+    background-size: contain;
+}
+
+.footer__social-link a {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
