@@ -105,6 +105,9 @@ body {
 .logo {
     position: relative;
     text-transform: uppercase;
+    font-family: 'Gelasio';
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .logo__icon {
@@ -127,9 +130,6 @@ body {
 .header__logo {
     margin-right: 121px;
     padding: 15px 0;
-    font-family: 'Gelasio';
-    font-weight: 500;
-    font-size: 24px;
 }
 
 .header__navigation {
@@ -389,5 +389,80 @@ body {
 
 .footer {
     margin-top: 140px;
+    padding: 72px 0 150px 0;
     background-color: #E5E5E5;
+}
+
+.footer__box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__info {
+    width: 390px;
+    margin-right: 108px;
+}
+
+.footer__logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    padding: 30px 0 15px 22px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+    background-size: 78px 75px;
+    margin-bottom: 15px;
+}
+
+.footer__info-text {
+    opacity: 0.7;
+}
+
+.footer__home-links,
+.footer__pages-links {
+    margin-right: 93px;
+}
+
+.footer__titles {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.footer__link:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer__mail {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__social-link {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__social-link:nth-child(2) {
+    background-image: url(../images/insta\ \(1\).svg);
+    background-size: contain;
+}
+
+.footer__social-link:nth-child(3) {
+    background-image: url(../images/twit\ \(1\).svg);
+    background-size: contain;
 }
